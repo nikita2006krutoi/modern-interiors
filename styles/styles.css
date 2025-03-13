@@ -151,11 +151,11 @@ section:first-child {
     height: 1844px;
 }
 
-.container::before {
+body::before {
     position: absolute;
     top: 3739px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 1844px;
     content: " ";
     z-index: -1;
@@ -180,10 +180,6 @@ section:first-child {
     margin: 0 auto 60px;
     width: 1150px;
     height: 326px;
-}
-
-.services__:last-child() {
-    margin-bottom: 0px;
 }
 
 .services__image {
