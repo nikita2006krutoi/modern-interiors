@@ -1,90 +1,198 @@
 body {
     font-family: 'Manrope';
+    font-weight: 400;
 }
 
+section {
+    margin-top: 150px;
+}
+section:first-child {
+    margin-top: 0px;
+}
 .container {
     margin: 0 auto;
     width: 1150px;
 }
 
-.design-wrapper {
+.hero {
     height: 650px;
 }
 
-.design-wrapper__primary-text {
-    margin-bottom: 30px;
-    margin-right: 194px; 
+.hero__title {
+    margin-bottom: 31px;
+    margin-right: 194px;
     width: 956px;
-    height: 120px;  
-    font-weight: 400;
-    font-size: 55px;
+    height: 120px;
+    font-size: 60px;
     line-height: 60px;
-    letter-spacing: -3%;
-    font-family: 'Manrope';
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
-.design-wrapper__image-wrapper {
-    width: 1150px;
+.hero__description {
     height: 500px;
-    background-image: url(../resources/image1.png);
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(../resources/interiors.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.design-wrapper__image-wrapper_second-text {
-    padding-top: 379px;
-    padding-left: 40px;
+.hero__text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
     width: 430px;
     height: 81px;
-    line-height: 100%;
-    font-weight: 400;
     font-size: 20px;
-    letter-spacing: -3%;
-    font-family: 'Manrope';
-    color: white;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FFF;
 }
 
-.studio-description-wrapper {
-    margin-top: 150px;
+.about {
     width: 1051px;
     height: 518px;
 }
 
-.studio-description-wrapper__about-us {
+.about__title {
     margin-bottom: 30px;
-    margin-left: 3px;
     height: 25px;
-    font-family: "Manrope";
-    font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: -3%;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
-.studio-description-wrapper__title {
+.about__text {
     margin-bottom: 30px;
+    margin-left: 3px;
     width: 1048px;
     height: 366px;
-    font-family: "Manrope";
-    font-weight: 400;
     font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -3%;
+    line-height: 134%;
+    letter-spacing: -0.03em;
 }
 
-.studio-description-wrapper__view-services {
+.about__link {
     display: block;
     width: 255px;
     height: 67px;
     border-radius: 5px;
     font-size: 20px;
     line-height: 67px;
-    letter-spacing: -3%;
-    font-family: 'Manrope';
+    letter-spacing: -0.03em;
     text-align: center;
     background-color: #AD1818;
-    color: white;
+    color: #FFF;
     text-decoration: none;
     cursor: pointer;
+}
+
+.projects {
+    padding-bottom: 150px;
+    height: 2122px;
+    font-size: 18px;
+}
+
+.projects__title {
+    margin-bottom: 30px;
+}
+
+.projects__item {
+    margin-bottom: 90px;
+    height: 548px;
+}
+
+.projects__image {
+    margin-bottom: 15px;
+    display: block;
+    width: 1150px;
+    height: 450px;
+}
+
+.projects__name {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+}
+
+.projects__link {
+    margin-left: 2px;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #AD1818;
+}
+
+.projects__button {
+    width: 100%;
+    height: 153px;
+    font-size: 30px;
+    line-height: -0.03em;
+    letter-spacing: -0.03em;
+    border: 1px #AD1818 solid;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #AD1818;
+    cursor: pointer
+}
+
+.projects__button:hover {
+    border: 1px #FFF solid;
+    background-color: #AD1818;
+    color: #FFF;
+    cursor: pointer
+}
+
+.services {
+    margin: 0 auto;
+    height: 1844px;
+}
+
+.container::before {
+    position: absolute;
+    top: 3739px;
+    left: 0;
+    width: 100vw;
+    height: 1844px;
+    content: " ";
+    z-index: -1;
+    background-color: #121212;
+}
+.services__title {
+    margin-bottom: 34px;
+    padding-top: 151px;
+    padding-left: 2px;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: #FFF;
+}
+
+.services__list {
+    margin: 0 auto;
+    padding-bottom: 150px;
+    width: 1150px;
+}
+
+.services__item {
+    margin: 0 auto 60px;
+    width: 1150px;
+    height: 326px;
+}
+
+.services__:last-child() {
+    margin-bottom: 0px;
+}
+
+.services__image {
+    margin-bottom: 15px;
+}
+
+.services__name {
+    padding-left: 3px;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: #FFF;
 }
