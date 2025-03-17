@@ -92,6 +92,7 @@ section:first-child {
 
 .about__title {
     margin-bottom: 30px;
+    height: 25px;
     line-height: 25px;
 }
 
@@ -199,6 +200,7 @@ section:first-child {
     margin-bottom: 34px;
     padding-top: 151px;
     padding-left: 2px;
+    font-size: 18px;
     letter-spacing: -0.03em;
     color: #FFF;
 }
@@ -219,7 +221,7 @@ section:first-child {
 }
 
 .services__name {
-    padding-left: 5px;
+    padding-left: 3px;
     font-size: 30px;
     letter-spacing: -0.03em;
     color: #FFF;
@@ -278,6 +280,7 @@ section:first-child {
 
 .contacts__title {
     margin-bottom: 32px;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
 }
