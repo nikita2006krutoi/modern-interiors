@@ -137,10 +137,12 @@ section:first-child {
 }
 
 .projects__image {
-    margin-bottom: 15px;
     display: block;
+    margin-bottom: 15px;
     width: 1150px;
     height: 450px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .projects__name {
