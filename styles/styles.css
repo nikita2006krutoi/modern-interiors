@@ -1,25 +1,61 @@
-body {
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     font-family: 'Manrope';
     font-weight: 400;
 }
 
-section {
+.title {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+
+section, footer {
     margin-top: 150px;
 }
 section:first-child {
     margin-top: 0px;
 }
 .container {
-    margin: 0 auto;
-    width: 1150px;
+    margin: 32.82px auto;
+    width: 1150px; 
+}
+
+.header {
+    margin-bottom: 70px;
+    width: 100%;
+    height: 25px;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-right: 555px;
+    width: 127px;
+    height: 21.42px;
+}
+
+.header__link {
+    display: inline-block;
+    height: 25px;
+    margin-right: 58px;
+    letter-spacing: -0.035em;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.header__link:last-child {
+    margin-right: 0;
 }
 
 .hero {
+    margin-top: 0px;
     height: 650px;
 }
 
 .hero__title {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     margin-right: 194px;
     width: 956px;
     height: 120px;
@@ -40,11 +76,11 @@ section:first-child {
 .hero__text {
     position: absolute;
     bottom: 40px;
-    left: 40px;
+    left: 40px; 
     width: 430px;
     height: 81px;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 133%;
     letter-spacing: -0.03em;
     color: #FFF;
 }
@@ -57,10 +93,7 @@ section:first-child {
 .about__title {
     margin-bottom: 30px;
     height: 25px;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: -0.03em;
-    color: #121212;
+    line-height: 25px;
 }
 
 .about__text {
@@ -69,14 +102,14 @@ section:first-child {
     width: 1048px;
     height: 366px;
     font-size: 45px;
-    line-height: 134%;
+    line-height: 136%;
     letter-spacing: -0.03em;
 }
 
 .about__link {
     display: block;
     width: 255px;
-    height: 67px;
+    height: 68px;
     border-radius: 5px;
     font-size: 20px;
     line-height: 67px;
@@ -113,25 +146,25 @@ section:first-child {
 .projects__name {
     margin-bottom: 15px;
     font-size: 30px;
-    line-height: 100%;
+    line-height: 41px;
     letter-spacing: -0.03em;
 }
 
 .projects__link {
-    margin-left: 2px;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 27px;
     letter-spacing: -0.03em;
     text-decoration: none;
     color: #AD1818;
 }
 
 .projects__button {
-    width: 100%;
+    width: 1150px;
     height: 153px;
+    vertical-align: center;
     font-size: 30px;
-    line-height: -0.03em;
-    letter-spacing: -0.03em;
+    line-height: 41px;
+    letter-spacing: -0.007em;
     border: 1px #AD1818 solid;
     border-radius: 5px;
     background-color: #FFF;
@@ -147,19 +180,19 @@ section:first-child {
 }
 
 .services {
-    margin: 0 auto;
+    position: relative;
     height: 1844px;
 }
 
-body::before {
+.services::before {
     position: absolute;
-    top: 3739px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 100vw;
     height: 1844px;
+    background-color: #121212;
+    transform: translateX(-50%);
     content: " ";
     z-index: -1;
-    background-color: #121212;
 }
 .services__title {
     margin-bottom: 34px;
@@ -172,7 +205,6 @@ body::before {
 
 .services__list {
     margin: 0 auto;
-    padding-bottom: 150px;
     width: 1150px;
 }
 
@@ -183,7 +215,7 @@ body::before {
 }
 
 .services__image {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .services__name {
@@ -192,3 +224,133 @@ body::before {
     letter-spacing: -0.03em;
     color: #FFF;
 }
+
+.apartment {
+    position: relative;
+    height: 717px;
+    margin-top: 0;
+}
+.apartment::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-height: 717px;
+    min-width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../resources/apartment-lesnoy-peisage.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.apartment__title {
+    position: absolute;
+    bottom: 60px;
+    width: 443px;
+    height: 82px;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.contacts {
+    position: relative;
+    margin-top: 186px;
+    width: 473px;
+    height: 217px;
+}
+
+.contacts::after {
+    position: absolute;
+    top: -35px;
+    width: 13px;
+    height: 22px;
+    content: "";
+    background-image: url("../resources/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.contacts__title {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+}
+
+.contacts__tel > a{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    text-decoration: none;
+}
+
+.contacts__mail > a{
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #121212;
+}
+
+.footer {
+    position: relative;
+    margin-top: 150px;
+    width: 1150px;
+    height: 229px;
+}
+
+.footer::before {
+    position: absolute;
+    width: 100vw;
+    height: 229px;
+    left: 50%;
+    background-color: #121212;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: 50% 50%;
+    content: "";
+    z-index: -1;
+}
+.footer__nav {
+    display: block;
+    margin: 0 auto;
+    padding-top: 62px;
+    width: 550px;
+    height: 25px;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: 45px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: #FFF;
+}
+
+.footer__link:last-child {
+    margin-right: 0;
+}
+.footer_studio-metrica {
+    display: block;
+    margin: 113px auto;
+    width: 389px;
+    height: 27px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.028em;
+    opacity: 0.5;
+    color: #FFF;
+}
+
